@@ -32,6 +32,10 @@ public class Hooks {
 		String browser = System.getProperty("BROWSER");
 		String phantomjs_dir = System.getenv("PHANTOMJS_PATH");
 
+		if (browser == null) {
+			browser = "chrome";
+		}
+
 		switch (browser) {
 		case "chrome":
 			driver = new ChromeDriver();
@@ -47,9 +51,6 @@ public class Hooks {
 			caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
 					phantomjs_dir + "//phantomjs.exe");
 			driver = new PhantomJSDriver(caps);
-			break;
-		default:
-			driver = new ChromeDriver();
 			break;
 		}
 
