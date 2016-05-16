@@ -52,6 +52,9 @@ public class Hooks {
 					phantomjs_dir + "//phantomjs.exe");
 			driver = new PhantomJSDriver(caps);
 			break;
+		default:
+                	driver = new ChromeDriver();
+                	break;
 		}
 
 		System.out.println("Opening Browser...." + browser);
