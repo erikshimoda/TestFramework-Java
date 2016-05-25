@@ -45,7 +45,7 @@ public class PesquisarUmVeiculoSteps {
 	}
 
 	@Então("^eu visualizo os detalhes do veiculo$")
-	public void eu_visualizo_os_detalhes_do_veículo() throws Throwable {
+	public void eu_visualizo_os_detalhes_do_veiculo() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		throw new PendingException();
 	}
