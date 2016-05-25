@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import pageobjects.HomePage;
 import cucumber.api.PendingException;
 import cucumber.api.java.pt.E;
-import cucumber.api.java.pt.Então;
+import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
 
 public class PesquisarUmVeiculoSteps {
@@ -44,20 +44,20 @@ public class PesquisarUmVeiculoSteps {
 		PreencherDadosFiltroVeiculo.ClicarBuscar(driver);
 	}
 
-	@Então("^eu visualizo os detalhes do veiculo$")
+	@Entao("^eu visualizo os detalhes do veiculo$")
 	public void eu_visualizo_os_detalhes_do_veiculo() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		throw new PendingException();
 	}
 
-	@Então("^eu visualizo uma lista de modelos de veiculos$")
+	@Entao("^eu visualizo uma lista de modelos de veiculos$")
 	public void eu_visualizo_uma_lista_de_modelos_de_veículos()
 			throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		throw new PendingException();
 	}
 
-	@Então("^eu clico para Visualizar os Detalhes$")
+	@Entao("^eu clico para Visualizar os Detalhes$")
 	public void eu_clico_para_Visualizar_os_Detalhes() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		throw new PendingException();
