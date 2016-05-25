@@ -1,24 +1,25 @@
 package step_definitions;
 
+import helpers.Log;
+import modules.PreencherDadosFiltroVeiculo;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import pageobjects.HomePage;
 import cucumber.api.PendingException;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import helpers.Log;
-import modules.PreencherDadosFiltroVeiculo;
-import pageobjects.HomePage;
 
 public class PesquisarUmVeiculoSteps {
 	public WebDriver driver;
 
 	public PesquisarUmVeiculoSteps() {
-		Log.iniciadoCasoDeTeste("Pesquisar um Veículo no Site da BV");
+		Log.iniciadoCasoDeTeste("Pesquisar um Veiculo no Site da BV");
 		driver = Hooks.driver;
 	}
-	
+
 	@Quando("eu pesquiso pelo modelo \"([^\"]*)\"$")
 	public void eu_pequiso_pelo_modelo(String modelo) throws Throwable {
 		PageFactory.initElements(driver, HomePage.class);
@@ -43,22 +44,22 @@ public class PesquisarUmVeiculoSteps {
 		PreencherDadosFiltroVeiculo.ClicarBuscar(driver);
 	}
 
-	@Então("^eu visualizo os detalhes do veículo$")
+	@Então("^eu visualizo os detalhes do veiculo$")
 	public void eu_visualizo_os_detalhes_do_veículo() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
 	}
-	
+
 	@Então("^eu visualizo uma lista de modelos de veiculos$")
-	public void eu_visualizo_uma_lista_de_modelos_de_veiculos() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void eu_visualizo_uma_lista_de_modelos_de_veículos()
+			throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
 	}
 
 	@Então("^eu clico para Visualizar os Detalhes$")
 	public void eu_clico_para_Visualizar_os_Detalhes() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
 	}
-	
 }
