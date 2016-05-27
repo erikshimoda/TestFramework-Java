@@ -21,7 +21,7 @@ import cucumber.api.java.Before;
 public class Hooks {
 	public static WebDriver driver;
 
-	@Before
+	@Before("@testeAceitacao, @testesFuncionais")
 	/**
 	 * Delete all cookies at the start of each scenario to avoid shared state
 	 * between tests
@@ -53,8 +53,8 @@ public class Hooks {
 			driver = new PhantomJSDriver(caps);
 			break;
 		default:
-                	driver = new ChromeDriver();
-                	break;
+			driver = new ChromeDriver();
+			break;
 		}
 
 		System.out.println("Opening Browser...." + browser);
@@ -62,7 +62,7 @@ public class Hooks {
 		driver.manage().window().maximize();
 	}
 
-	@After
+	@After("@testeAceitacao, @testesFuncionais")
 	/**
 	 * Embed a screenshot in test report if test is marked as failed
 	 */
@@ -80,7 +80,5 @@ public class Hooks {
 
 		}
 		driver.quit();
-
 	}
-
 }
