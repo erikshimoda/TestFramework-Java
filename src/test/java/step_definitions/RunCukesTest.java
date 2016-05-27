@@ -10,9 +10,8 @@ import cucumber.api.junit.Cucumber;
 		features = "classpath:features"
 		, plugin = { "pretty", "html:target/cucumber-html-report", "json:cucumber.json" }
 		, monochrome = true
-		, tags = { "@testeAceitacao" }
+		, tags = { "@testeAceitacao, @testesFuncionais, @testesApi, @testesServicos" }
 )
 
 public class RunCukesTest {
-
 }
