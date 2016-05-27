@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.pt.Dado;
 
 public class ContextoSteps {
-	private WebDriver driver;
+	public WebDriver driver;
+
 	public ContextoSteps() {
 		driver = Hooks.driver;
 	}
