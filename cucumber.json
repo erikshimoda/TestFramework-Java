@@ -1,24 +1,100 @@
 [
   {
+    "id": "acessar-a-api-a-retornar-os-posts",
+    "tags": [
+      {
+        "name": "@testesApi",
+        "line": 2
+      }
+    ],
+    "description": "Dado que eu acesso a API \"http://jsonplaceholder.typicode.com\"",
+    "name": "Acessar a API a retornar os Posts",
+    "keyword": "Funcionalidade",
+    "line": 4,
+    "elements": [
+      {
+        "id": "acessar-a-api-a-retornar-os-posts;pesquisar-por-um-veículo-no-site-da-bv-financeira",
+        "description": "",
+        "name": "Pesquisar por um veículo no site da BV Financeira",
+        "keyword": "Cenário",
+        "line": 7,
+        "steps": [
+          {
+            "result": {
+              "duration": 15128180696,
+              "status": "passed"
+            },
+            "name": "eu pesquiso por um post com código \"2\"",
+            "keyword": "Quando ",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 36
+                }
+              ],
+              "location": "PesquisarPostsApi.eu_pesquiso_por_um_post_com_código(String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2679831,
+              "status": "pending",
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat step_definitions.PesquisarPostsApi.eu_visualizo_oo_título(PesquisarPostsApi.java:42)\n\tat ✽.Então eu visualizo oo título \"qui est esse\"(features/PesquisarPosts.feature:10)\n"
+            },
+            "name": "eu visualizo oo título \"qui est esse\"",
+            "keyword": "Então ",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "val": "qui est esse",
+                  "offset": 24
+                }
+              ],
+              "location": "PesquisarPostsApi.eu_visualizo_oo_título(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "features/PesquisarPosts.feature",
+    "comments": [
+      {
+        "value": "#language: pt",
+        "line": 1
+      }
+    ]
+  },
+  {
     "id": "no-portal-da-bv,-exibir-os-veículos-disponíveis-em-nosso-sistema,-para-que-os-clientes-possam-comprar",
+    "tags": [
+      {
+        "name": "@testeAceitacao",
+        "line": 2
+      }
+    ],
     "description": "",
     "name": "No portal da BV, exibir os veículos disponíveis em nosso sistema, para que os clientes possam comprar",
     "keyword": "Funcionalidade",
-    "line": 3,
+    "line": 4,
     "elements": [
       {
         "description": "",
         "name": "",
         "keyword": "Contexto",
-        "line": 5,
+        "line": 6,
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 1643632572,
+              "status": "passed"
             },
             "name": "que eu acesso \"http://www.bvfinanceira.com.br\"",
             "keyword": "Dado ",
-            "line": 6,
+            "line": 7,
             "match": {
               "arguments": [
                 {
@@ -36,9 +112,8 @@
         "after": [
           {
             "result": {
-              "duration": 111999,
-              "status": "failed",
-              "error_message": "java.lang.NullPointerException\n\tat step_definitions.Hooks.embedScreenshot(Hooks.java:72)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat cucumber.runtime.Utils$1.call(Utils.java:34)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:30)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:222)\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:210)\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:204)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:50)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:138)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:77)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:53)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:144)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+              "duration": 555720946,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.embedScreenshot(Scenario)"
@@ -49,9 +124,8 @@
         "before": [
           {
             "result": {
-              "duration": 987832,
-              "status": "failed",
-              "error_message": "java.lang.NullPointerException\n\tat step_definitions.Hooks.openBrowser(Hooks.java:35)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:606)\n\tat cucumber.runtime.Utils$1.call(Utils.java:34)\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\n\tat cucumber.runtime.Utils.invoke(Utils.java:30)\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:222)\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:210)\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:200)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\n\tat org.junit.runners.Suite.runChild(Suite.java:127)\n\tat org.junit.runners.Suite.runChild(Suite.java:26)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:160)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:138)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:77)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:53)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:144)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)\n"
+              "duration": 3157500381,
+              "status": "passed"
             },
             "match": {
               "location": "Hooks.openBrowser()"
@@ -60,16 +134,17 @@
         ],
         "description": "",
         "name": "Pesquisar por um veículo no site da BV Financeira",
-        "keyword": "Cenário",
-        "line": 8,
+        "keyword": "Cenario",
+        "line": 9,
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 118374924,
+              "status": "passed"
             },
             "name": "eu pesquiso pelo modelo \"Ford\"",
             "keyword": "Quando ",
-            "line": 9,
+            "line": 10,
             "match": {
               "arguments": [
                 {
@@ -82,11 +157,12 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 127803655,
+              "status": "passed"
             },
             "name": "informo o ano inicial de \"2013\"",
             "keyword": "E ",
-            "line": 10,
+            "line": 11,
             "match": {
               "arguments": [
                 {
@@ -99,11 +175,12 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 135632406,
+              "status": "passed"
             },
             "name": "informo o ano final de \"2016\"",
             "keyword": "E ",
-            "line": 11,
+            "line": 12,
             "match": {
               "arguments": [
                 {
@@ -116,24 +193,27 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 83485848,
+              "status": "passed"
             },
             "name": "clico no Buscar",
             "keyword": "E ",
-            "line": 12,
+            "line": 13,
             "match": {
               "location": "PesquisarUmVeiculoSteps.clico_no_Buscar()"
             }
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 151936,
+              "status": "pending",
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat step_definitions.PesquisarUmVeiculoSteps.eu_visualizo_uma_lista_de_modelos_de_veículos(PesquisarUmVeiculoSteps.java:57)\n\tat ✽.Entao eu visualizo uma lista de modelos de veiculos(features/PesquisarUmVeiculo.feature:14)\n"
             },
             "name": "eu visualizo uma lista de modelos de veiculos",
-            "keyword": "Então ",
-            "line": 13,
+            "keyword": "Entao ",
+            "line": 14,
             "match": {
-              "location": "PesquisarUmVeiculoSteps.eu_visualizo_uma_lista_de_modelos_de_veiculos()"
+              "location": "PesquisarUmVeiculoSteps.eu_visualizo_uma_lista_de_modelos_de_veículos()"
             }
           },
           {
@@ -142,7 +222,7 @@
             },
             "name": "eu clico para Visualizar os Detalhes",
             "keyword": "E ",
-            "line": 14,
+            "line": 15,
             "match": {
               "location": "PesquisarUmVeiculoSteps.eu_clico_para_Visualizar_os_Detalhes()"
             }
@@ -151,11 +231,11 @@
             "result": {
               "status": "skipped"
             },
-            "name": "eu visualizo os detalhes do veículo",
-            "keyword": "Então ",
-            "line": 15,
+            "name": "eu visualizo os detalhes do veiculo",
+            "keyword": "Entao ",
+            "line": 16,
             "match": {
-              "location": "PesquisarUmVeiculoSteps.eu_visualizo_os_detalhes_do_veículo()"
+              "location": "PesquisarUmVeiculoSteps.eu_visualizo_os_detalhes_do_veiculo()"
             }
           }
         ],
