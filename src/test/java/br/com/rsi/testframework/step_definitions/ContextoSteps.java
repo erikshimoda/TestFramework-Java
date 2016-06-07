@@ -1,4 +1,4 @@
-package step_definitions;
+package br.com.rsi.testframework.step_definitions;
 
 import org.openqa.selenium.WebDriver;
 

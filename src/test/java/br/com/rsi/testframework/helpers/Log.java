@@ -1,4 +1,4 @@
-package helpers;
+package br.com.rsi.testframework.helpers;
 import org.apache.log4j.Logger;
 
 public class Log {

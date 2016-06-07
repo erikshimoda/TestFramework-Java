@@ -1,13 +1,13 @@
-package step_definitions;
+package br.com.rsi.testframework.step_definitions;
 
 import org.apache.jorphan.collections.HashTree;
 
+import br.com.rsi.testframework.helpers.JmeterRequisicoesHelper;
+import br.com.rsi.testframework.modules.RetornarPoststApi;
 import cucumber.api.PendingException;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import helpers.JmeterRequisicoesHelper;
-import modules.RetornarPoststApi;
 
 public class PesquisarPostsApi {
 	RetornarPoststApi retornarPoststApi;

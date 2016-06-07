@@ -1,4 +1,4 @@
-package pageobjects;
+package br.com.rsi.testframework.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

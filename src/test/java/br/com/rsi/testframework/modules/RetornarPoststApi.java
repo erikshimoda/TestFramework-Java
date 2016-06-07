@@ -1,4 +1,4 @@
-package modules;
+package br.com.rsi.testframework.modules;
 
 public class RetornarPoststApi {
 	

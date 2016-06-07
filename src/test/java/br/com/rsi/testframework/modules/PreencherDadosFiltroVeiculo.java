@@ -1,8 +1,8 @@
-package modules;
+package br.com.rsi.testframework.modules;
 
 import org.openqa.selenium.WebDriver;
 
-import pageobjects.HomePage;
+import br.com.rsi.testframework.pageobjects.HomePage;
 
 public class PreencherDadosFiltroVeiculo {
 

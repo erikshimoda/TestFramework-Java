@@ -1,4 +1,4 @@
-package helpers;
+package br.com.rsi.testframework.helpers;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;

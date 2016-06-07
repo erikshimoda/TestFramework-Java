@@ -1,4 +1,4 @@
-package helpers;
+package br.com.rsi.testframework.helpers;
 
 import org.apache.jmeter.engine.StandardJMeterEngine;
 import org.apache.jmeter.protocol.http.sampler.HTTPSampler;

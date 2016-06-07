@@ -1,4 +1,4 @@
-package step_definitions;
+package br.com.rsi.testframework.step_definitions;
 
 import java.net.MalformedURLException;
 
@@ -21,11 +21,8 @@ import cucumber.api.java.Before;
 public class Hooks {
 	public static WebDriver driver;
 
-	@Before
-	/**
-	 * Delete all cookies at the start of each scenario to avoid shared state
-	 * between tests
-	 */
+	@Before({ "~@testesApi" })
+
 	public void openBrowser() throws MalformedURLException {
 		System.out.println("Called openBrowser");
 
@@ -62,7 +59,7 @@ public class Hooks {
 		driver.manage().window().maximize();
 	}
 
-	@After
+	@After({ "~@testesApi" })
 	/**
 	 * Embed a screenshot in test report if test is marked as failed
 	 */
