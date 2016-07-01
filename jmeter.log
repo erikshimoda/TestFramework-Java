@@ -1,0 +1,26 @@
+2016/06/11 22:31:16 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2016/06/11 22:31:16 ERROR - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, ensure you set property:'htmlParser.className' 
+2016/06/11 22:31:16 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/06/11 22:31:16 INFO  - jmeter.protocol.http.sampler.HTTPJavaImpl: Maximum connection retries = 0 
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/06/11 22:31:16 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/06/11 22:31:16 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/06/11 22:31:16 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/06/11 22:31:16 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/06/11 22:31:16 WARN  - jmeter.engine.util.CompoundVariable: Did not find any functions 
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 :  
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group . 
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/06/11 22:31:16 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/06/11 22:31:16 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/06/11 22:31:16 INFO  - jmeter.threads.JMeterThread: Thread started:  1-1 
+2016/06/11 22:31:16 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at org.apache.jmeter.threads.AbstractThreadGroup.initialize(AbstractThreadGroup.java:149)
+	at org.apache.jmeter.threads.JMeterThread.initRun(JMeterThread.java:600)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:237)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016/06/11 22:31:16 INFO  - jmeter.threads.JMeterThread: Thread finished:  1-1 
+2016/06/11 22:31:16 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/06/11 22:31:16 INFO  - jmeter.services.FileServer: Default base='/home/erik/DEV/git/java/TestFramework-Java' 

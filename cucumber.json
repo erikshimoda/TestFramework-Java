@@ -1,276 +1,128 @@
 [
   {
-    "id": "no-portal-da-bv,-exibir-os-veículos-disponíveis-em-nosso-sistema,-para-que-os-clientes-possam-comprar",
-    "tags": [
-      {
-        "name": "@testesApi",
-        "line": 2
-      }
-    ],
-    "description": "",
-    "name": "No portal da BV, exibir os veículos disponíveis em nosso sistema, para que os clientes possam comprar",
-    "keyword": "Funcionalidade",
-    "line": 3,
-    "elements": [
-      {
-        "description": "",
-        "name": "",
-        "keyword": "Contexto",
-        "line": 4,
-        "steps": [
-          {
-            "result": {
-              "duration": 298593028,
-              "status": "passed"
-            },
-            "name": "que eu acesso a API \"http://jsonplaceholder.typicode.com/\"",
-            "keyword": "Dado ",
-            "line": 5,
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://jsonplaceholder.typicode.com/",
-                  "offset": 21
-                }
-              ],
-              "location": "PesquisarPostsApi.que_Eu_Acesso_A_API(String)"
-            }
-          }
-        ],
-        "type": "background"
-      },
-      {
-        "id": "no-portal-da-bv,-exibir-os-veículos-disponíveis-em-nosso-sistema,-para-que-os-clientes-possam-comprar;pesquisar-por-um-veículo-no-site-da-bv-financeira",
-        "description": "",
-        "name": "Pesquisar por um veículo no site da BV Financeira",
-        "keyword": "Cenário",
-        "line": 7,
-        "steps": [
-          {
-            "result": {
-              "duration": 2212399,
-              "status": "pending",
-              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat br.com.rsi.testframework.step_definitions.PesquisarPostsApi.eu_pesquiso_por_um_post_com_código(PesquisarPostsApi.java:29)\n\tat ✽.Quando eu pesquiso por um post com código \"2\"(features/PesquisarPosts.feature:9)\n"
-            },
-            "name": "eu pesquiso por um post com código \"2\"",
-            "keyword": "Quando ",
-            "line": 9,
-            "match": {
-              "arguments": [
-                {
-                  "val": "2",
-                  "offset": 36
-                }
-              ],
-              "location": "PesquisarPostsApi.eu_pesquiso_por_um_post_com_código(String)"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "eu visualizo oo título \"qui est esse\"",
-            "keyword": "Então ",
-            "line": 10,
-            "match": {
-              "arguments": [
-                {
-                  "val": "qui est esse",
-                  "offset": 24
-                }
-              ],
-              "location": "PesquisarPostsApi.eu_visualizo_oo_título(String)"
-            }
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "uri": "features/PesquisarPosts.feature",
     "comments": [
       {
-        "value": "#language: pt",
-        "line": 1
-      }
-    ]
-  },
-  {
-    "id": "no-portal-da-bv,-exibir-os-veículos-disponíveis-em-nosso-sistema,-para-que-os-clientes-possam-comprar",
-    "tags": [
-      {
-        "name": "@testesFuncionais",
-        "line": 2
-      }
-    ],
-    "description": "",
-    "name": "No portal da BV, exibir os veículos disponíveis em nosso sistema, para que os clientes possam comprar",
-    "keyword": "Funcionalidade",
-    "line": 3,
-    "elements": [
-      {
-        "description": "",
-        "name": "",
-        "keyword": "Contexto",
-        "line": 5,
-        "steps": [
-          {
-            "result": {
-              "duration": 1648300430,
-              "status": "passed"
-            },
-            "name": "que eu acesso \"http://www.bvfinanceira.com.br\"",
-            "keyword": "Dado ",
-            "line": 6,
-            "match": {
-              "arguments": [
-                {
-                  "val": "http://www.bvfinanceira.com.br",
-                  "offset": 15
-                }
-              ],
-              "location": "ContextoSteps.queEuAcesso(String)"
-            }
-          }
-        ],
-        "type": "background"
+        "line": 1,
+        "value": "#language: pt"
       },
       {
-        "after": [
-          {
-            "result": {
-              "duration": 556171165,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "no-portal-da-bv,-exibir-os-veículos-disponíveis-em-nosso-sistema,-para-que-os-clientes-possam-comprar;pesquisar-por-um-veículo-no-site-da-bv-financeira",
-        "before": [
-          {
-            "result": {
-              "duration": 3129948726,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.openBrowser()"
-            }
-          }
-        ],
-        "description": "",
-        "name": "Pesquisar por um veículo no site da BV Financeira",
-        "keyword": "Cenário",
+        "line": 2,
+        "value": "#encoding: iso-8859-1"
+      }
+    ],
+    "line": 6,
+    "elements": [
+      {
         "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
         "steps": [
           {
             "result": {
-              "duration": 109543953,
+              "duration": 376222982,
               "status": "passed"
             },
-            "name": "eu pesquiso pelo modelo \"Ford\"",
-            "keyword": "Quando ",
             "line": 9,
+            "name": "que eu realizo um request para a API \"http://jsonplaceholder.typicode.com\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Ford",
-                  "offset": 25
+                  "val": "http://jsonplaceholder.typicode.com",
+                  "offset": 38
                 }
               ],
-              "location": "PesquisarUmVeiculoSteps.eu_pequiso_pelo_modelo(String)"
-            }
-          },
-          {
-            "result": {
-              "duration": 140908748,
-              "status": "passed"
+              "location": "PostsApiSteps.que_eu_realizo_um_request_para_a_api(String)"
             },
-            "name": "informo o ano inicial de \"2013\"",
-            "keyword": "E ",
-            "line": 10,
-            "match": {
-              "arguments": [
-                {
-                  "val": "2013",
-                  "offset": 26
-                }
-              ],
-              "location": "PesquisarUmVeiculoSteps.informo_o_ano_inicial(String)"
-            }
-          },
-          {
-            "result": {
-              "duration": 127752720,
-              "status": "passed"
-            },
-            "name": "informo o ano final de \"2016\"",
-            "keyword": "E ",
-            "line": 11,
-            "match": {
-              "arguments": [
-                {
-                  "val": "2016",
-                  "offset": 24
-                }
-              ],
-              "location": "PesquisarUmVeiculoSteps.informo_o_ano_final(String)"
-            }
-          },
-          {
-            "result": {
-              "duration": 74189916,
-              "status": "passed"
-            },
-            "name": "clico no Buscar",
-            "keyword": "E ",
-            "line": 12,
-            "match": {
-              "location": "PesquisarUmVeiculoSteps.clico_no_Buscar()"
-            }
-          },
-          {
-            "result": {
-              "duration": 126116,
-              "status": "pending",
-              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat br.com.rsi.testframework.step_definitions.PesquisarUmVeiculoSteps.eu_visualizo_uma_lista_de_modelos_de_veículos(PesquisarUmVeiculoSteps.java:55)\n\tat ✽.Então eu visualizo uma lista de modelos de veiculos(features/PesquisarUmVeiculo.feature:13)\n"
-            },
-            "name": "eu visualizo uma lista de modelos de veiculos",
-            "keyword": "Então ",
-            "line": 13,
-            "match": {
-              "location": "PesquisarUmVeiculoSteps.eu_visualizo_uma_lista_de_modelos_de_veículos()"
-            }
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "name": "eu clico para Visualizar os Detalhes",
-            "keyword": "E ",
-            "line": 14,
-            "match": {
-              "location": "PesquisarUmVeiculoSteps.eu_clico_para_Visualizar_os_Detalhes()"
-            }
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "name": "eu visualizo os detalhes do veículo",
-            "keyword": "Então ",
-            "line": 15,
-            "match": {}
+            "keyword": "Dado "
           }
-        ],
-        "type": "scenario"
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Realizar um POST request na API no caminho /posts, devo visualizar um post",
+        "description": "",
+        "id": "acessar-uma-api-e-realizar-uma-requisiã§ã£o;realizar-um-post-request-na-api-no-caminho-/posts,-devo-visualizar-um-post",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4394257831,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "eu realizo um GET request com o caminho \"/posts/1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/posts/1",
+                  "offset": 41
+                }
+              ],
+              "location": "PostsApiSteps.eu_realizo_um_GET_request_com_o_caminho(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 40469537,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "eu recebo codigo \"200\" como resposta",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "PostsApiSteps.eu_recebo_codigo_como_resposta(int)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 13320541,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "eu recebo a resposta:",
+            "match": {
+              "location": "PostsApiSteps.eu_recebo_a_resposta(PostsApiBean\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId",
+                  "id"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "1",
+                  "1"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "Entao "
+          }
+        ]
       }
     ],
-    "uri": "features/PesquisarUmVeiculo.feature",
-    "comments": [
+    "name": "Acessar uma API e realizar uma requisiÃ§Ã£o",
+    "description": "",
+    "id": "acessar-uma-api-e-realizar-uma-requisiã§ã£o",
+    "keyword": "Funcionalidade",
+    "uri": "features/Servicos API/Api.feature",
+    "tags": [
       {
-        "value": "#language: pt",
-        "line": 1
+        "line": 4,
+        "name": "@servicos"
       }
     ]
   }

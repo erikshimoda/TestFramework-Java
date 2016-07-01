@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite Web Mobile" parallel="tests" verbose="1"
+	configfailurepolicy="continue" thread-count="2">
+	<test name="Mobile">
+		<classes>
+			<class name="com.testframeworkdemo.runner.RunGUIWebTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Web">
+		<classes>
+			<class name="com.testframeworkdemo.runner.RunGUIMobileTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

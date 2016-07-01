@@ -1,18 +1,20 @@
-package br.com.rsi.testframework.step_definitions;
+package com.testframeworkdemo.step_definitions.web;
 
 import org.openqa.selenium.WebDriver;
+
+import com.testframeworkdemo.framework.helpers.WebDriverHelper;
 
 import cucumber.api.java.pt.Dado;
 
 public class ContextoSteps {
-	public WebDriver driver;
+	public static WebDriver webDriver;
 
-	public ContextoSteps() {
-		driver = Hooks.driver;
+	public ContextoSteps (WebDriverHelper webDriver) {
+		ContextoSteps.webDriver = WebDriverHelper.getSharedDriver();
 	}
 
 	@Dado("que eu acesso \"([^\"]*)\"$")
 	public void queEuAcesso(String url) throws Throwable {
-		driver.get(url);
+		webDriver.get(url);
 	}
 }
